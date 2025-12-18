@@ -1,16 +1,13 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-// Selamat datang di Backend Web3!
-// Ini adalah "Database" dan "API" lu yang abadi.
-
 contract DeVote {
     
     // --- STRUKTUR DATA ---
     
     struct Poll {
         uint256 id;
-        string question;    // Pertanyaan: "Siapa Presiden?"
+        string question;    // Pertanyaan: "Siapa Orang ini?"
         string[] options;   // Pilihan: ["A", "B", "C"]
         uint256[] votes;    // Jumlah Suara: [0, 0, 0]
         uint256 endTime;    // Kapan voting ditutup (Timestamp)
